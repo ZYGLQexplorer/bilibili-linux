@@ -73,11 +73,11 @@ grep -lr "// noinspection SuspiciousTypeOfGuard" --exclude="app.asar" .
 sed -i 's#// noinspection SuspiciousTypeOfGuard#runtimeOptions.platform="win32";// noinspection SuspiciousTypeOfGuard#' app/node_modules/electron-updater/out/providerFactory.js
 sed -i 's#process.resourcesPath#path.dirname(this.app.getAppPath())#' app/node_modules/electron-updater/out/ElectronAppAdapter.js
 
-notice "====Bili Bridge===="
-notice "inject"
-cat "$root_dir/res/scripts/injectBridge.js" > "app/main/assets/temp.js"
-cat "app/main/assets/bili-bridge.js" >> "app/main/assets/temp.js"
-rm "app/main/assets/bili-bridge.js"
-mv "app/main/assets/temp.js" "app/main/assets/bili-bridge.js"
+#notice "====Bili Bridge===="
+#notice "inject"
+#cat "$root_dir/res/scripts/injectBridge.js" > "app/main/assets/temp.js"
+#cat "app/main/assets/bili-bridge.js" >> "app/main/assets/temp.js"
+#rm "app/main/assets/bili-bridge.js"
+#mv "app/main/assets/temp.js" "app/main/assets/bili-bridge.js"
 asar p app app.asar
 rm -rf app
