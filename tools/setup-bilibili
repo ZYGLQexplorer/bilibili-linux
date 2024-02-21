@@ -19,6 +19,5 @@ res_dir="$root_dir/tmp/bili/resources"
 "$root_dir/tools/update-electron"
 "$root_dir/tools/update-bilibili"
 "$root_dir/tools/fix-other.sh"
-"$root_dir/tools/area-unlimit.sh"
 
 mv "$res_dir/"* "$root_dir/app"
