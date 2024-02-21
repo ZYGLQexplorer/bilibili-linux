@@ -8,9 +8,7 @@
 ----
 
 
-[![aur](https://img.shields.io/aur/version/bilibili-bin)](https://aur.archlinux.org/packages/bilibili-bin)
-
-  这是哔哩哔哩 Linux版
+  这是哔哩哔哩 不知道什么版
   
   SVG图标来自 [@Peternal](https://github.com/Peternal)
 
